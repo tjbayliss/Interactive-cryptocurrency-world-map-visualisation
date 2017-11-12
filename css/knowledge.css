@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeRegular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeBold.woff") format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeBoldItalic.woff") format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeBlack.woff") format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeBlackItalic.woff") format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeRegularItalic.woff") format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeLight.woff") format('woff');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeLightItalic.woff") format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeUltraLight.woff") format('woff');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "knowledge";
+    src: url("fonts/KnowledgeUltraLightItalic.woff") format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+

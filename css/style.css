@@ -1,0 +1,600 @@
+						body {
+							font-family: Knowledge, Arial, Sans-serif;
+							color:#666;
+						}
+						
+						
+						
+						input[type=text]{
+							width:300px;
+							border-radius:5px;
+							height:30px;	
+							outline: none;
+						}
+						
+						
+						.toolTipLinkLine{
+							fill:#000000;
+							stroke:#4A4933;
+							stroke-width:1.0px;
+							opacity:0.5;
+						}
+						
+						.toolTipFurniture.selectedCentroidMarkers{						
+							fill:#4A4933;
+							stroke:#4A4933;
+							stroke-width:2px;
+							fill-opacity:0.5;
+						}						
+						
+						.trl-wrapper {
+							height: auto;
+							width: 100%;
+							max-width: 1160px;
+							margin: 0 auto;
+							display: inline-block;
+						}
+						
+						.trl-arcStartPoint, .trl-arcEndPoint{
+							fill:white;
+							stroke-width:2;
+							stroke:red;
+						}
+						
+						.trl-taperedArc{
+						  fill: #a0a0a0;
+						  fill-opacity:0.66;
+						  pointer-events: none;
+						}
+						
+						.trl-equator{
+							stroke-width:1.5px;
+							stroke:#a0a0a0;
+							fill:none;
+							stroke-dasharray:10 5;
+						}
+						
+						.trl-toolTip {
+							width:230px;
+							min-height:100px;
+							position: absolute;
+							top:0px;
+							left:0px;
+							background:rgba(255, 255, 255, 1.0);
+							color: none;
+							padding:10px;
+							border: 0px solid;
+							display: inline;
+							opacity:0.00;
+							border:1px solid #fff;
+							box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+							pointer-events:none;
+							z-index:1000;
+						}
+						
+						.trl-toolTip2 {
+							width:230px;
+							min-height:100px;
+							position: absolute;
+							top:0px;
+							left:50px;
+							background:rgba(255, 255, 255, 1.0);
+							color: none;
+							padding:10px;
+							border: 0px solid;
+							display: inline;
+							opacity:0.00;
+							border:1px solid #fff;
+							box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+							pointer-events:none;
+							z-index:1000;
+						}
+						
+						.trl-toolTip .trl-header, .trl-toolTip2 .trl-header {
+							font-size: 18px;
+							float: left;
+							margin-bottom: 20px;
+							width: 100%;
+						}
+												
+												
+						.flag-icon {
+						  	border: 1px solid #eee;
+							float:left;
+						 }
+						 
+]												
+						.trl-toolTip .trl-header .trl-flag {
+							float:left;
+							width: 70px;
+							font-size: 50px;
+						}
+						
+						.trl-toolTip .trl-header .trl-country,
+						.trl-toolTip2 .trl-header .trl-country {
+							float:left;
+							margin: 20px 0 0 20px;
+							font-weight: 600;
+							font-family: "knowledge-text-n6", "knowledge", Arial ,sans-serif;
+						}
+						
+											
+						.trl-toolTip .trl-header .trl-flag {
+						  float: left;
+						  width: 70px;
+						  font-size: 50px;
+						 }
+						 
+						 .trl-toolTip2 .trl-header .trl-flag {
+						  float: left;
+						  width: 70px;
+						  font-size: 50px;
+						 }
+						
+						
+						
+						.trl-toolTip .trl-information, .trl-toolTip2 .trl-information{
+							margin: 0px 0 0 0px;
+							font-weight: normal;
+							font-size: 12px;
+							line-height:1.35;
+							font-family: "knowledge-text-n6", "knowledge", Arial ,sans-serif;
+						}
+						
+						.trl-legend{
+							position:Absolute;
+							top:375px;
+							left:25px;
+							font-size: 10px;
+							color: #666;
+							border: 1px solid #fff;
+							width: 165px;
+							opacity: 0.9;
+						}
+						
+						.trl-graphLegend{
+							position:Absolute;
+							bottom:5px;
+							right:5px;
+							font-size: 10px;
+							color: #666;
+							border: 1px solid #fff;
+							width: 210px;
+							opacity: 0.9;
+						}
+						
+						.trl-header {
+							font-size: 12px;
+							border-bottom: 1px solid #fff;
+							width: 206px;
+							float: left;
+							width: 100%;
+							background: #e9e9e9;
+							height: 30px;
+						}
+						
+						.trl-toolTip .trl-header, .trl-toolTip2 .trl-header {
+							font-size: 18px;
+							float: left;
+							margin-bottom: 15px;
+							width: 100%;
+							background: red;
+							opacity:0.99;
+							background:rgba(255, 255, 255, 0.0);
+							height:50px;
+						}
+						
+						.trl-legend .trl-header span,
+						.trl-graphLegend .trl-header span{
+							margin-left: 8px;
+							color: #444;
+							font-size: 16px;
+							font-weight: 600;
+							font-family: "knowledge-text-n6", "knowledge", Arial ,sans-serif;
+							line-height: 30px;
+						}
+						
+						.trl-legend .trl-timeseries {
+							float: left;
+							width: 100%;
+							height: 150px;
+							background: #f6f6f6;
+							padding-bottom: 5px;
+						}
+						
+						.trl-graphLegend .trl-timeseries {
+							float: left;
+							width: 100%;
+							height: 205px;
+							background: #f6f6f6;
+							padding-bottom: 5px;
+						}
+						
+						.trl-legend .trl-timeseries .trl-exp,
+						.trl-graphLegend .trl-timeseries .trl-exp {
+							margin-bottom: 5px;
+						}
+						
+						.trl-exp{
+							color: #444;
+							font-size: 14px;
+							font-weight: 600;
+							font-family: "knowledge-text-n6", "knowledge", Arial ,sans-serif;
+							margin-left: 8px;
+							margin-top: 8px;
+						}
+						
+						.trl-legend .trl-timeseries .trl-col {
+							float: left;
+							width: 99%;
+						}
+						
+						.trl-legend .trl-timeseries .trl-index,
+						.trl-graphLegend .trl-timeseries .trl-index {
+							margin: 0 2px 3px 8px;
+							display: inline-block;
+							cursor: pointer;
+						}
+						
+						
+						.trl-legend .trl-timeseries .trl-unreported .trl-graphic {
+							stroke: #cfd8e3;
+							opacity: 0.8;
+							stroke-width: 2px;
+						}
+						
+						.trl-legend .trl-timeseries .trl-Global-Advocates {
+							stroke: #387C2B;
+						}
+						
+						.trl-legend .trl-timeseries .trl-Developing {
+							stroke: #77A22D;
+						}
+						
+						.trl-legend .trl-timeseries .trl-Fence-sitters {
+							stroke: #FFA100;
+						}
+						
+						.trl-legend .trl-timeseries .trl-Hostile {
+							stroke: #FF5900;
+						}
+						
+						.trl-legend .trl-timeseries .trl-Banned {
+							stroke: #A00000;
+						}
+						
+						.trl-legend .trl-timeseries .trl-graphic,
+						.trl-graphLegend .trl-timeseries .trl-graphic  {
+							display: inline-block;
+							width: 30px;
+						}
+						
+						.trl-legend .trl-timeseries .trl-name, .trl-graphLegend .trl-timeseries .trl-name {
+							display: inline-block; 
+							margin-left: 8px;
+							fill: #888;
+							font-size: 12px;
+							font-weight: 300;
+							font-family: "knowledge-text-n3", "knowledge", Arial ,sans-serif;
+						}
+						
+						
+						#trl-interactive {
+							width:100%;	
+						}
+						
+						#trl-mainHeader{
+							font-size:40px;
+							font-weight:bold;
+							margin:0px;
+						}
+						
+						#trl-subHeader{
+							font-size:24px;
+							margin:0px;
+						}
+						
+						#trl-information{
+							font-size:10px;
+							margin:0px;
+							line-height:1.0;
+						}
+						
+						.trl-boundary {
+						  fill: none;
+						  stroke: #fff;
+						  stroke-width: 0.25px;
+						}
+						
+						.trl-country {
+						  fill: #cfd8e3;
+						  stroke: #ccc;
+						  stroke-width: 0.0px;
+						  opacity:0.4;
+						}
+						
+						.trl-country.trl-active {
+						  fill:orange;
+						}
+						
+						.trl-country.trl-highlighted {
+						  fill:#FF0000;
+						}
+						
+						.trl-country.trl-hovered {
+						  fill:#c0ccdd;
+						  stroke:#99A7B9;
+						  stroke-width:1.5px;
+						  opacity:1.0;
+						}
+						
+						.trl-background {
+						  fill: none;
+						  pointer-events: all;
+						}
+						
+						
+						.leaflet-container{
+							background-color:#c5e8ff;
+						}
+						
+						.trl-chart {
+							float: left;
+							width: 100%;
+							height: 600px;
+							position: relative;
+							background: #fff;
+							display:inline;
+						}
+						
+						
+						.trl-flow {
+							fill: none;
+							stroke: #333;
+							opacity: 0.5;
+							stroke-linecap:round;
+						}
+						
+						.trl-placeLabels{
+							font-size:10px;
+							font-weight:bold;
+							fill:#000000;	
+							stroke:none;
+						}
+						
+						#countries path {
+						  fill: #f5f5f5;
+						  stroke: #fff;
+						}
+						
+						#arcs path {
+						  fill: none;
+						  stroke-opacity: .9;
+						}
+						
+						.trl-trails{
+							stroke-width:2px;
+						}
+						
+						.trl-vertexLabels{
+							fill:#000000;
+							stroke:#000000;
+							stroke-width:0px;
+							font-size:6px;
+						}
+						
+						
+						.trl-notes, .trl-browser{
+							margin: 15px 0;
+							margin-left: 0px;
+							float: left;
+							opacity: 0.8;
+							font-size: 11px;
+							width: 47%;
+							margin-left: 2%;
+						}
+						
+						.iframe{
+							height:700px;
+						}
+						
+						.trl-trigger {
+							cursor: pointer;
+						}
+						
+						.trl-credits {
+							margin-top: 15px;
+							opacity: 0.8;
+							font-size: 11px;
+							float: right;
+							text-align: right;
+							width: 35%;
+							margin-right: 2%;
+						}
+						
+						a {
+							text-decoration: none;
+							color: #0072a8;
+							border-bottom: 1px dotted #0072a8;
+						}
+						
+						p{
+							display:inline;
+						}
+						
+						.trl-graphLegend .trl-timeseries .trl-Bitcoin { stroke: #7f3b08; }
+						.trl-graphLegend .trl-timeseries .trl-Bitcoin-Cash { stroke: #b35806; }
+						.trl-graphLegend .trl-timeseries .trl-Dash { stroke: #e08214; }
+						.trl-graphLegend .trl-timeseries .trl-Ethereum { stroke: #fdb863; }
+						.trl-graphLegend .trl-timeseries .trl-Ethereum-Classic { stroke: #fee0b6; }
+						.trl-graphLegend .trl-timeseries .trl-IOTA { stroke: #b2abd2; }
+						.trl-graphLegend .trl-timeseries .trl-Litecoin {  stroke: #8073ac; }
+						.trl-graphLegend .trl-timeseries .trl-NEM { stroke: #542788; }
+						.trl-graphLegend .trl-timeseries .trl-Ripple { stroke: #2d004b; }
+						
+						.trl-line, .trl-graphLegend .trl-timeseries {
+							fill: none;
+							stroke: #666666;
+							stroke-width: 2.5px;
+							opacity:1.0;
+							
+						 
+							&.trl-Bitcoin{ stroke:#621F95; }
+							&.trl-BitcoinCash{ stroke:#6E3AB7; }
+							&.trl-Dash{ stroke:#005DA2; }
+							&.trl-Ethereum{ stroke:#0099C4; }
+							&.trl-Ethereum-Classic{ stroke:#FFA100; }
+							&.trl-IOTA{ stroke:#FF8000; }
+							&.trl-Litecoin{ stroke:#FF5900; }
+							&.trl-NEM{ stroke:#DC0A0A; }
+							&.trl-Ripple{ stroke:#A00000; }
+							
+							
+							&.trl-SMline{
+								fill:none;
+								fill-opacity:1.00;
+								stroke-width: 0.75px;
+								stroke: #AFAFAF;
+									
+								&.trl-Bitcoin{ stroke:#621F95; }
+								&.trl-BitcoinCash{ stroke:#6E3AB7; }
+								&.trl-Dash{ stroke:#005DA2; }
+								&.trl-Ethereum{ stroke:#0099C4; }
+								&.trl-Ethereum-Classic{ stroke:#FFA100; }
+								&.trl-IOTA{ stroke:#FF8000; }
+								&.trl-Litecoin{ stroke:#FF5900; }
+								&.trl-NEM{ stroke:#DC0A0A; }
+								&.trl-Ripple{ stroke:#A00000; }
+							}
+						}
+						
+						.trl-area {
+						  fill: #e7e7e7;
+						  opacity:0.60;
+						}
+						
+						.trl-dataDots {
+							fill: none;
+							stroke: none;
+							stroke-width: 0.0px;
+							opacity:0.5;
+						 
+							&.Bitcoin{ fill:#621F95; }
+							&.BitcoinCash{ fill:#6E3AB7; }
+							&.Dash{ fill:#005DA2; }
+							&.Ethereum{ fill:#0099C4; }
+							&.Ethereum-Classic{ fill:#FFA100; }
+							&.IOTA{ fill:#FF8000; }
+							&.Litecoin{ fill:#FF5900; }
+							&.NEM{ fill:#DC0A0A; }
+							&.Ripple{ fill:#A00000; }
+						}
+						
+						.trl-svg-sm text{
+							font-size:10px;
+							fill:#AFAFAF;
+							font-weight:400;
+						}
+						
+						.trl-dateLabels{
+							font-size:14px;
+							fill:#b3b3b3;
+							font-weight:100;
+							pointer-events:none;
+						}
+						
+						
+						#trl-worldMap, .trl-worldMap{
+						}
+						
+						
+						.trl-GraphTitle{
+							font-size:16px;
+							fill:#b3b3b3;
+							font-weight:500;
+							pointer-events:none;
+						}
+						
+						.trl-axis path,
+						.trl-axis line {
+						  fill: none;
+						  stroke: #999;
+						  stroke-width:0.5px;
+						  shape-rendering: crispEdges;
+						  opacity:1.0;
+						}
+						
+						.trl-axis text {
+							font-size: 14px;
+							fill: #4D4D4D;
+							pointer-events: none;
+							font-weight: 100;
+							font-family: "knowledge-text-n1", "knowledge", Arial ,sans-serif;
+						}
+						
+						
+						.trl-hit {
+						  opacity: 0.0;
+						 }
+						 
+						 .trl-yearLine, #yearLine{
+							fill:none;
+							stroke-width:2px;
+							stroke:rgba(0, 0, 0, 0.1);
+							display:inline;	
+							pointer-events:none; 
+						 }
+						 
+						 .trl-yearText{
+							fill: #666;
+							font-size: 12px;
+							pointer-events: none;
+							pointer-events:none;
+						}
+						
+						.trl-dataDots{
+					/*		fill:rgba(0, 0, 0, 0.5);
+							stroke:none;
+							stroke-width:0px;*/
+						}
+						
+						.trl-dataDotLabels{
+							font-size:10px;
+						}
+						
+						.trl-marketCap_value{
+							font-weight:700;	
+						}
+						
+						.trl-bar {
+							fill: #FFA100;
+							fill-opacity:0.90;
+						}
+						
+						.trl-treemap_labels{
+							font-size:10px;
+						}
+						
+						.tt-selectable {
+							background-color:#FFFFFF;
+							width: 300px;
+							margin-left: 2px;
+							cursor: pointer;
+							display:inline-block;
+						}
+						
+						#the-basics{
+							 vertical-align:middle;
+							margin-top:10px;	
+							margin-bottom:10px;	
+							display:inline-block;
+						}
+						
+						.trl-testCountryLabel{
+							font-weight:bold;
+							
+						}
+						
+						.trl-testCountryLabel:hover{
+							cursor:pointer;
+						}
